@@ -1,1 +1,2 @@
-web: HEROKU=true ./bin/start
+privateweb: HEROKU=true ./bin/start
+
