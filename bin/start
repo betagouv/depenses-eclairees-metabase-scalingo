@@ -11,9 +11,7 @@ if [ -z "${MB_JETTY_PORT}" ] && [ -n "${PORT}" ]; then
     export MB_JETTY_PORT="$PORT"
 fi
 
-if [ "$SCALINGO_PRIVATE_HOSTNAME" ]; then
-    export MB_JETTY_HOST="$SCALINGO_PRIVATE_HOSTNAME"
-fi
+export MB_JETTY_HOST=localhost
 
 # Heroku Postgres
 if [ "$DATABASE_URL" ]; then

@@ -1,2 +1,2 @@
-privateweb: HEROKU=true ./bin/start
+privateweb: ./bin/start_metabase_with_oauth.sh
 
